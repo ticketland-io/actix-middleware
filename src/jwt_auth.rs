@@ -7,6 +7,7 @@ use actix_web::{
 };
 use futures_util::future::{LocalBoxFuture, ok, err, Ready};
 use jsonwebtoken::{decode, Validation, DecodingKey};
+use serde::{Serialize, Deserialize};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Claims {
